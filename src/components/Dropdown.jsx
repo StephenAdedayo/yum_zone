@@ -1,42 +1,33 @@
 import React, { useState } from 'react';
-import { FaChevronDown } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 const Dropdown = ({ label, links, style }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      className="relative inline-block text-left"
-      onMouseEnter={() => setIsOpen(true)}
-      onMouseLeave={() => setIsOpen(false)}
-    >
-      <span
-        className="inline-flex justify-start items-center w-auto rounded-md py-2 text-md font-bold text-white md:text-slate-700 "
+    <div className="relative inline-block text-left">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className={`flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md focus:outline-none ${style}`}
       >
         {label}
-        <FaChevronDown className=" h-3 w-5 ml-2  " />
-      </span>
+        <MdKeyboardArrowDown className="ml-2" />
+      </button>
 
       {isOpen && (
-        <div
-          className=" absolute left-[-50%] top-[130%] w-[200px] rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
-          role="menu"
-          aria-orientation="vertical"
-          aria-labelledby="menu-button"
-        >
-          <div className="py-1" role="none">
-            {links.map((link) => (
-              <Link
-                
-                to={link.to}
-                className=" block px-4 py-2 text-sm {style} hover:bg-gray-300 "
-                role="menuitem"
-              >
-                {link.label}
-              </Link>
+        <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+          <ul className="py-1">
+            {links.map((link, index) => (
+              <li key={index}>
+                <a
+                  href={link.to}
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                >
+                  {link.label}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       )}
     </div>

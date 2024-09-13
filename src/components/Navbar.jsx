@@ -7,6 +7,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import Dropdown from './Dropdown'
 import { Link } from 'react-router-dom'
 
+
 // Data for language and user dropdowns
 const lang = [
   { label: 'English', to: "" },
@@ -25,7 +26,10 @@ const userOptions = [
   { label: 'Logout', to: "/logout" }
 ]
 
+
+
 const Navbar = () => {
+  const logo = "https://res.cloudinary.com/db4ewstgm/image/upload/v1726241208/yumzone_logo_tfnzkz.png"
   return (
     // Site header starts here
     <header className='font-primaryFont'>
@@ -58,7 +62,7 @@ const Navbar = () => {
         <div className='flex items-center'>
           {/* Logo */}
           <div>
-            <img src="/images/yumzone-logo.jpg" alt="Yumzone Logo" className='w-20 h-auto' />
+            <img src={logo} alt="Yumzone Logo" className='w-20 h-auto w-32' />
           </div>
           {/* Navigation Links */}
           <div className='text-xl flex gap-5 ml-8'>
