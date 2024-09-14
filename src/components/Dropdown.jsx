@@ -8,7 +8,7 @@ const Dropdown = ({ label, links, style }) => {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`flex items-center justify-between px-4 py-2 border border-gray-300 rounded-md focus:outline-none ${style}`}
+        className={`flex items-center justify-between w-auto px-4 py-2 border border-gray-300 rounded-md focus:outline-none ${style}`}
       >
         {label}
         <MdKeyboardArrowDown className="ml-2" />
