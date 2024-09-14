@@ -81,8 +81,8 @@ const Navbar = () => {
         {/* Left side nav */}
         <div className='flex flex-col md:flex-row items-center'>
           {/* Logo */}
-          <div>
-            <Link to='/'><img src={logo} alt="Yumzone Logo" className='w-20 h-auto' /></Link>
+          <div className='my-2 md:my-auto'>
+            <Link to='/'><img src={logo} alt="Yumzone Logo" className='w-32 h-auto ' /></Link>
           </div>
           {/* Navigation Links */}
           <div className='text-xl flex gap-5 ml-8'>
