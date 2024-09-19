@@ -1,0 +1,112 @@
+{
+ 
+    "products" : [
+
+      {
+        "id" : 1,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742798/2021-08-20-611fbfb0af526_euomuz.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 2,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf1b426e1_qmxbou.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 3,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf491f625_qpmfqf.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 4,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbf6a9a159_orbp3b.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 5,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf30f1a68_gcqqix.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 6,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfbc0e2ed_eivrob.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 7,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-21-611ff39525320_ewrs76.jpg",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 8,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfa397c7c_sotmht.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+    
+      {
+        "id" : 9,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfd13f7db_tbqbqo.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+
+      {
+        "id" : 10,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfc6ac515_oeevnn.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+
+      {
+        "id" : 11,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfbc0e2ed_eivrob.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      },
+
+      {
+        "id" : 12,
+        "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbf96910eb_sane0b.png",
+        "category" : "pizza",
+        "title" : "Medu Vasa",
+        "price" : 95.00
+      }
+    
+
+
+
+
+
+    ]
+
+
+
+
+
+}

@@ -13,7 +13,7 @@ const AllProducts = () => {
   // fucntion to fetch all products
   const fetchProducts = async () => {
     try {
-      const response = await fetch(``);
+      const response = await fetch(`http://localhost:8000/products`);
       if (!response.ok) {
         throw new Error("Error occured while fetching data");
       }
@@ -93,7 +93,7 @@ const AllProducts = () => {
         <p className="text-lg">Most Popular Items</p>
       </div>
 
-      <div>
+      <div className="md:px-20 px-5  py-20">
         <Products filteredProducts={filteredProducts} />
       </div>
     </>
