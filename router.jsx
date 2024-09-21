@@ -24,6 +24,7 @@ import Coupon from "./src/profile/Coupon";
 import LoyaltyPoints from "./src/profile/LoyaltyPoints";
 import ReferEarn from "./src/profile/ReferEarn";
 import Tracking from "./src/products/Tracking";
+import CartPage from "./src/pages/CartPage";
 
 export const router = createBrowserRouter([
 
@@ -54,7 +55,8 @@ export const router = createBrowserRouter([
             {path : '/coupon', element : <Coupon/>}, 
             {path : '/loyaltypoints', element : <LoyaltyPoints />},
             {path : '/referearn', element : <ReferEarn />},
-            {path : '/tracking', element : <Tracking />}
+            {path : '/tracking', element : <Tracking />},
+            {path : '/cart', element: <CartPage />}
 
 
         ]

@@ -1,7 +1,8 @@
 import React from 'react'
 import { CiHeart } from 'react-icons/ci'
 
-const Products = ({filteredProducts}) => {
+const Products = ({filteredProducts, onProductClick, isModalOpen, setIsModalOpen}) => {
+
 
     // const {category, title, image, price } = filteredProducts || {}
 
@@ -9,7 +10,7 @@ const Products = ({filteredProducts}) => {
     <div className='grid lg:grid-cols-3 md:grid-cols-2 max-md:grid-cols-2 max-sm:grid-cols-1 gap-10'>
 
         {filteredProducts.map(filtered => (
-            <div className='shadow-md relative rounded-md p-2'>
+            <div key={filtered.id} onClick={() => onProductClick(filtered)} className='shadow-md relative rounded-md p-2'>
 
                 <div className='flex gap-2'>
                     <img className='size-[100px]' src={filtered.image} alt="" />
