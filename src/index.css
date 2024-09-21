@@ -5,3 +5,7 @@
 .juwon::-webkit-scrollbar{
     display: none;  
  }
+
+ .cart[type = 'radio']{
+    accent-color: #059D55;
+ }

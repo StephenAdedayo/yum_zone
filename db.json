@@ -7,7 +7,8 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742798/2021-08-20-611fbfb0af526_euomuz.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 95.00,
+        "description" : "is a cripsy, fluffy, soft and delicious lentil fritters from south indian cuisine"
       },
     
       {
@@ -15,7 +16,8 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf1b426e1_qmxbou.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 95.00,
+        "description" : "is a cripsy, fluffy, soft and delicious lentil fritters from south indian cuisine"
       },
     
       {

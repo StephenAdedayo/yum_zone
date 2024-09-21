@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Products from "../components/Products";
+import Modal from "../components/Modal";
+
 
 const AllProducts = () => {
   // usestates
@@ -9,6 +11,8 @@ const AllProducts = () => {
   const [sortOption, setSortOption] = useState("default");
   const [error, setError] = useState("");
   const [search, setSearch] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState([])
 
   // fucntion to fetch all products
   const fetchProducts = async () => {
@@ -85,6 +89,14 @@ const AllProducts = () => {
     setFilteredProducts(filtererd);
   };
 
+
+  const handleProductClick = (product) => {
+    setSelectedProduct(product); // Set the clicked product as the selected product
+    setIsModalOpen(true); // Open the modal
+  };
+
+  
+
   if (!products) return <div>{error}</div>;
 
   return (
@@ -94,8 +106,9 @@ const AllProducts = () => {
       </div>
 
       <div className="md:px-20 px-5  py-20">
-        <Products filteredProducts={filteredProducts} />
+        <Products filteredProducts={filteredProducts} isModalOpen={isModalOpen} onProductClick={handleProductClick} setIsModalOpen={setIsModalOpen}/>
       </div>
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} product={selectedProduct}/>
     </>
   );
 };
