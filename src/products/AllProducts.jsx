@@ -89,10 +89,9 @@ const AllProducts = () => {
     setFilteredProducts(filtererd);
   };
 
-
-  const handleProductClick = (product) => {
-    setSelectedProduct(product); // Set the clicked product as the selected product
-    setIsModalOpen(true); // Open the modal
+  const handleOpenModal = (id) => {
+    setSelectedProduct(id);   // Set the ID of the product to display
+    setIsModalOpen(true);       // Open the modal
   };
 
   
@@ -105,10 +104,10 @@ const AllProducts = () => {
         <p className="text-lg">Most Popular Items</p>
       </div>
 
-      <div className="md:px-20 px-5  py-20">
-        <Products filteredProducts={filteredProducts} isModalOpen={isModalOpen} onProductClick={handleProductClick} setIsModalOpen={setIsModalOpen}/>
+      <div className="md:px-20 px-5  py-20"> 
+        <Products filteredProducts={filteredProducts} isModalOpen={isModalOpen} onProductClick={handleOpenModal} setIsModalOpen={setIsModalOpen}/>
       </div>
-      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} product={selectedProduct}/>
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} productID={selectedProduct}/>
     </>
   );
 };

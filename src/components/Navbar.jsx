@@ -14,6 +14,8 @@ import { PiShieldStarFill } from 'react-icons/pi'
 import { HiReceiptRefund } from 'react-icons/hi'
 import { RiCoupon2Fill, RiCouponFill } from 'react-icons/ri'
 import { FaLocationCrosshairs } from 'react-icons/fa6'
+import { useSelector } from 'react-redux'
+
 
 // Language and User dropdown data
 const lang = [
@@ -38,6 +40,7 @@ const Navbar = () => {
   const [cartItems, setCartItems] = useState(3)       // Dynamic cart state
   const navigate = useNavigate()                      // Hook for navigation
   const [isMenuOpen, setIsMenuOpen ] = useState(false)
+  const {amount = 0} = useSelector(state => state.cart)
 
   const logo = "https://res.cloudinary.com/db4ewstgm/image/upload/v1726241208/yumzone_logo_tfnzkz.png"
 
@@ -113,7 +116,7 @@ const Navbar = () => {
             <FiShoppingCart className='text-3xl' />
             {cartItems > 0 && (
               <span className='absolute -top-1 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center'>
-                {cartItems}
+                {amount}
               </span>
             )}
           </Link>

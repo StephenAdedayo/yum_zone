@@ -16,7 +16,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf1b426e1_qmxbou.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00,
+        "price" : 65.00,
         "description" : "is a cripsy, fluffy, soft and delicious lentil fritters from south indian cuisine"
       },
     
@@ -25,7 +25,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf491f625_qpmfqf.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 78.00
       },
     
       {
@@ -33,7 +33,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbf6a9a159_orbp3b.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 66.00
       },
     
       {
@@ -41,7 +41,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742797/2021-08-20-611fbf30f1a68_gcqqix.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 23.00
       },
     
       {
@@ -49,7 +49,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfbc0e2ed_eivrob.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 45.00
       },
     
       {
@@ -57,7 +57,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-21-611ff39525320_ewrs76.jpg",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 23.00
       },
     
       {
@@ -65,7 +65,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfa397c7c_sotmht.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 97.00
       },
     
       {
@@ -73,7 +73,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfd13f7db_tbqbqo.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 35.00
       },
 
       {
@@ -81,7 +81,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfc6ac515_oeevnn.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 56.00
       },
 
       {
@@ -89,7 +89,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbfbc0e2ed_eivrob.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 52.00
       },
 
       {
@@ -97,7 +97,7 @@
         "image" : "https://res.cloudinary.com/dnxovvjcz/image/upload/v1726742796/2021-08-20-611fbf96910eb_sane0b.png",
         "category" : "pizza",
         "title" : "Medu Vasa",
-        "price" : 95.00
+        "price" : 38.00
       }
     
 
