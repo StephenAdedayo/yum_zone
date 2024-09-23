@@ -35,6 +35,25 @@ const userOptions = [
   { label: 'Logout', to: "/logout" }
 ]
 
+const sideNav =[
+  {label: 'Profile', to: "/signup", icon: ImProfile  },
+  {label: 'My Orders', to: "/orders", icon: FaShoppingBag  },
+  {label: 'My address', to: "/address", icon: FaLocationCrosshairs  },
+  {label: 'Language', to: "/language", icon: MdLanguage  },
+  {label: 'Coupon', to: "/coupon", icon: RiCouponFill  },
+  {label: 'Help & Support', to: "/help", icon: MdHelpCenter  },
+  {label: 'Lve Chat', to: "/livechat", icon: BsChatDotsFill  },
+  {label: 'Refund Policy', to: "/refundpolicy", icon: HiReceiptRefund   },
+  {label: 'Cancellation Policy', to: "/cancellation", icon: MdFreeCancellation  },
+  {label: 'Shipping Policy', to: "/shippingpolicy", icon: MdLocalShipping   },
+  {label: 'Wallet', to: "/", icon: FaWallet   },
+  {label: 'Loyalty Points', to: "/loyaltypoints", icon: PiShieldStarFill  },
+  {label: 'Refer & Earn', to: "/referearn", icon: FaPeopleArrows  },
+  {label: 'Join a Restaurant', to: "/joinrestaurant", icon: BsShop  },
+  {label: 'Join as a Delivery Man', to: "/deliveryman", icon: GrUserWorker  },
+  {label: 'Sign In', to: "/signin", icon: FaSignInAlt   },
+]
+
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState('')  // State for search input
   const [cartItems, setCartItems] = useState(3)       // Dynamic cart state
@@ -136,201 +155,25 @@ const Navbar = () => {
                     <h1 className='text-4xl font-semibold'>Menu</h1>
                     <button onClick={()=>setIsMenuOpen(false)} className='text-4xl font-semibold '>x</button>
                 </span>
+                {/* Link list starts here */}
+                <MenuList className='flex flex-col gap-5' onClick={()=>setIsMenuOpen(false)}>
+                  {
+                    sideNav.map((item, index)=>(
+                      // link
+                      <Link to={item.to} key={index} >
+                    <MenuItem><ListItemIcon>
+                      {/* icon here */}
+                        <item.icon className='text-primaryColor text-4xl mx-3' />
+                      </ListItemIcon>
+                      <ListItemText>
+                      {/* text here */}
+                      <p className='text-lg'>{item.label}</p>
+                      </ListItemText>
+                    </MenuItem></Link>
 
-                <MenuList>
-
-                  {/* list Items */}
-                  <Link to="/signup">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <ImProfile className='text-primaryColor text-6xl mx-3' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Profile</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-                  
-                  {/* list Items */}
-                  <Link to="/orders">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <FaShoppingBag className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>My Orders</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/address">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <FaLocationCrosshairs className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>My Address</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/language">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <MdLanguage className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Language</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/coupon">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <RiCouponFill className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Coupon</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/help">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <MdHelpCenter className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Help & Support</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/livechat">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <BsChatDotsFill className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Lve Chat</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/refundpolicy">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <HiReceiptRefund className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Refund Policy</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/cancellation">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <MdFreeCancellation className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Cancellation Policy</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/shippingpolicy">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <MdLocalShipping className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Shipping Policy</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <FaWallet className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Wallet</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/loyaltypoints">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <PiShieldStarFill className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Loyalty Points</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/referearn">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <FaPeopleArrows className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Refer & Earn</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/joinrestaurant">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <BsShop className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Join a a Restaurant</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/deliveryman">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <GrUserWorker className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Join as a Delivery Man</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-
-                  {/* list Items */}
-                  <Link to="/signin">
-                  <MenuItem><ListItemIcon>
-                     {/* icon here */}
-                      <FaSignInAlt className='text-primaryColor text-6xl mx-3 ' />
-                    </ListItemIcon>
-                    <ListItemText>
-                     {/* text here */}
-                     <p className='text-2xl'>Sign In</p>
-                    </ListItemText>
-                  </MenuItem></Link>
-                  </MenuList>
+                    ))
+                  }
+                </MenuList>
 
               </div>
             </Drawer>
